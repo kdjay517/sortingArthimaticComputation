@@ -6,5 +6,4 @@ read -p "Enter the third Number:" c
 
 
 result_1=$(($a+$b+$c))
-
-
+result_2=$(($a*$b*$c))
