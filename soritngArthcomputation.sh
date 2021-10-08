@@ -23,3 +23,9 @@ for ((i=0; i<=3; i++))
 do
 	Array[i]=${dictionary_of_results[$i]}
 done
+
+
+
+Descending=($(sort -nr <(printf "%s\n" "${Array[@]}")))
+echo ${Descending[@]}
+
