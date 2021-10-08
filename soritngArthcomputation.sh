@@ -5,3 +5,6 @@ read -p "Enter the second Number:" b
 read -p "Enter the third Number:" c
 
 
+result_1=$(($a+$b+$c))
+
+
