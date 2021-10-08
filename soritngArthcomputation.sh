@@ -18,3 +18,8 @@ dictionary_of_results[1]=$result_2;
 dictionary_of_results[2]=$result_3;
 dictionary_of_results[3]=$result_4;
 
+
+for ((i=0; i<=3; i++))
+do
+	Array[i]=${dictionary_of_results[$i]}
+done
