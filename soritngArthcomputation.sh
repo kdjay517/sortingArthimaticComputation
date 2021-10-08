@@ -19,6 +19,7 @@ dictionary_of_results[2]=$result_3;
 dictionary_of_results[3]=$result_4;
 
 
+
 for ((i=0; i<=3; i++))
 do
 	Array[i]=${dictionary_of_results[$i]}
@@ -26,6 +27,9 @@ done
 
 
 
-Descending=($(sort -nr <(printf "%s\n" "${Array[@]}")))
-echo ${Descending[@]}
+desceningOrder=($(sort -nr <(printf "%s\n" "${Array[@]}")))
+echo ${descendingOrder[@]}
 
+
+ascendingOrder=($(sort -n <(printf "%s\n" "${Array[@]}")))
+echo ${ascendingOrder[@]}
